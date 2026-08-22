@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sarah Alhalees | AI &amp; Arabic NLP</title>
+  <meta name="description" content="AI graduate specializing in Arabic NLP — readability classification, text simplification, and applied research.">
+  <meta name="keywords" content="Sarah Alhalees, Arabic NLP, AI, Machine Learning, Deep Learning, NLP, Readability, Text Simplification" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Sarah Alhalees</span>
+        </h1>
+        <p>AI graduate focused on Arabic NLP — readability, text simplification, and the pipelines around them.</p>
+        <a href="#contact" class="btn btn--purple">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+    <!-- Each work__box is one project. Swap in a real screenshot for
+         each work__image (replace the placeholder div) once you have one. -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Bayyin &amp; Baseet</h3>
+              <p>
+                An end-to-end Arabic NLP pipeline: readability classification across six
+                difficulty levels and multi-level text simplification (L1–L3), built on two
+                original datasets (~44,000 and ~36,000 sentences). Published at IEEE ICNLP 2026;
+                won Best Poster, CS &amp; AI Department.
+              </p>
+              <ul class="work__list">
+                <li>AraBERTv2</li>
+                <li>AraBART</li>
+                <li>PyTorch</li>
+                <li>Streamlit</li>
+              </ul>
+              <div class="work__links">
+                <!-- Replace # with your HuggingFace Space / demo link -->
+                <a href="https://huggingface.co/SarahAlhalees" target="_blank" class="link__text">
+                  View on HuggingFace <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">Bayyin &amp; Baseet</div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Mental Health Self-Help Advisor</h3>
+              <p>
+                A RAG chatbot over 2,100+ curated mental health Q&amp;A pairs, with multi-query
+                expansion, answer reranking, and a crisis-safety filter that routes sensitive
+                queries to helplines.
+              </p>
+              <ul class="work__list">
+                <li>ChromaDB</li>
+                <li>HuggingFace</li>
+                <li>Groq</li>
+                <li>Streamlit</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">Mental Health RAG</div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Rayah</h3>
+              <p>
+                An NLP-powered platform for historical analysis: LDA topic modeling, named-entity
+                recognition for historical figures and events, and ElevenLabs text-to-speech for
+                Arabic audio narration.
+              </p>
+              <ul class="work__list">
+                <li>Scikit-learn</li>
+                <li>Transformers</li>
+                <li>ElevenLabs</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">Rayah</div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Anemia Detection from Fingernail Images</h3>
+              <p>
+                Non-invasive anemia detection using ResNet-18 (84% accuracy), with
+                autoencoder-based feature extraction and K-means++ clustering.
+              </p>
+              <ul class="work__list">
+                <li>TensorFlow/Keras</li>
+                <li>scikit-learn</li>
+                <li>OpenCV</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">Anemia Detection</div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>MixRec</h3>
+              <p>
+                Heterogeneous graph collaborative filtering for recommendation, built on the
+                SYNERISE dataset with a small team, under faculty supervision.
+              </p>
+              <ul class="work__list">
+                <li>Graph Neural Networks</li>
+                <li>Collaborative Filtering</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <div class="work__image work__image--placeholder">MixRec</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Publications & Awards ***** -->
+    <!-- Kept this section in place of "Clients" from the template, since
+         it's the equivalent trust-signal for a research/AI portfolio. -->
+
+    <section class="client" id="publications">
+      <div class="row">
+        <h2>Publications &amp; Awards</h2>
+        <div class="pub__list">
+          <div class="pub__item">
+            <h3>Exploring Classification Models and Input Representations for Arabic
+              Readability Assessment</h3>
+            <p>IEEE ICNLP 2026 · Published in IEEE Xplore</p>
+          </div>
+          <div class="pub__item">
+            <h3>Best Poster Award</h3>
+            <p>Bayyin &amp; Baseet — CS &amp; AI Department, University of Jeddah</p>
+          </div>
+          <div class="pub__item">
+            <h3>1st Place — Amazon Transcend Challenge 2025</h3>
+            <p>Led AI solution design for optimizing Amazon fulfillment center operations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Experience ***** -->
+
+    <section class="experience" id="experience">
+      <div class="row">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <h3>AI Specialist</h3>
+            <p class="timeline__org">Data Development Center</p>
+            <p class="timeline__dates">2025.06 — 2025.08</p>
+            <p>
+              Collaborated on an end-to-end data pipeline spanning collection and
+              preprocessing; built topic modeling and sentiment analysis systems, and
+              implemented a RAG system for information retrieval.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3>Quality Unit Leader</h3>
+            <p class="timeline__org">Robotics and IoT Club</p>
+            <p class="timeline__dates">2024.12 — 2025.08</p>
+            <p>
+              Led error-reporting and coordinated with the Writing Committee to improve
+              content quality, keeping materials aligned with the club's visual identity
+              and standards.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3>Organization &amp; Support Team Member</h3>
+            <p class="timeline__org">Electrical Engineer Preparation Program</p>
+            <p class="timeline__dates">2024.06 — 2024.08</p>
+            <p>
+              Managed Zoom sessions, resolved technical issues live, and supported
+              trainees via email correspondence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I'm an AI graduate from the University of Jeddah (4.9/5.0 GPA), focused on
+              natural language processing for Arabic. Most of my work sits at the
+              intersection of readability, simplification, and making dense Arabic text
+              more accessible — but I've also built RAG systems, worked on computer vision,
+              and led an AI solution that won first place at the Amazon Transcend Challenge.
+            </p>
+            <p>
+              I work comfortably in both Arabic and English, and most of my projects live
+              at that intersection too.
+            </p>
+            <!-- Link this to your actual CV PDF once you upload one -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Replace with a real photo: <img class="about__photo" src="./images/sarah.jpg" alt="Sarah Alhalees" /> -->
+            <div class="about__photo about__photo--placeholder">Photo</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Open to Arabic NLP, applied AI, and research-engineering roles. The quickest way
+          to reach me is by email.
+        </p>
+        <a href="mailto:sarahalees3@gmail.com" class="btn">sarahalees3@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Add/remove links as you like. Replace # with your real profile URLs. -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://huggingface.co/SarahAlhalees" title="HuggingFace">HuggingFace</a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="#" title="LinkedIn">LinkedIn</a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="#" title="GitHub">GitHub</a>
+        </li>
+      </ul>
+      <p>&copy; 2026 Sarah Alhalees.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">&uarr;</a>
+  <script src="index.js"></script>
+</body>
+
+</html>
