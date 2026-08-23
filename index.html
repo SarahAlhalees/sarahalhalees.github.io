@@ -8,6 +8,9 @@
   <title>Sarah Alhalees | AI &amp; Arabic NLP</title>
   <meta name="description" content="Passionate, experienced, and continuously expanding expertise across modern AI technologies.">
   <meta name="keywords" content="Sarah Alhalees, Arabic NLP, AI, Machine Learning, Deep Learning, NLP, Readability, Text Simplification" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -21,6 +24,7 @@
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
           <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+          <li class="nav__item"><a href="#awards" class="nav__link">Awards</a></li>
           <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -29,6 +33,7 @@
     </div>
     <div class="header__text-box row">
       <div class="header__text">
+        <p class="header__name-ar arabic">سارة الهليس</p>
         <h1 class="heading-primary">
           <span>Sarah Alhalees</span>
         </h1>
@@ -41,8 +46,8 @@
   <main role="main">
 
     <!-- ***** Work ***** -->
-    <!-- Each work__box is one project. Swap in a real screenshot for
-         each work__image (replace the placeholder div) once you have one. -->
+    <!-- Each work__box is one project. Each has a work__links row —
+         replace the # href with the real repo / demo / paper link. -->
 
     <section class="work" id="work">
       <div class="row">
@@ -90,6 +95,12 @@
                 <li>Groq</li>
                 <li>Streamlit</li>
               </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
             </div>
             <div class="work__image-box">
                <img class="work__image" src="./images/RAG" alt="Mental Health RAG" />
@@ -109,6 +120,12 @@
                 <li>Transformers</li>
                 <li>ElevenLabs</li>
               </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
             </div>
             <div class="work__image-box">
               <img class="work__image" src="./images/ddc.svg" alt="Raya" />
@@ -127,26 +144,15 @@
                 <li>scikit-learn</li>
                 <li>OpenCV</li>
               </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
             </div>
             <div class="work__image-box">
               <img class="work__image" src="./images/anemia" alt="Anemia Detection" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>MixRec</h3>
-              <p>
-                Heterogeneous graph collaborative filtering for recommendation, built on the
-                SYNERISE dataset with a small team, under faculty supervision.
-              </p>
-              <ul class="work__list">
-                <li>Graph Neural Networks</li>
-                <li>Collaborative Filtering</li>
-              </ul>
-            </div>
-            <div class="work__image-box">
-              <img class="work__image" src="./images/mixrec" alt="MixRec" />
             </div>
           </div>
 
@@ -154,19 +160,31 @@
       </div>
     </section>
 
-    <!-- ***** Publications & Awards ***** -->
-    <!-- Kept this section in place of "Clients" from the template, since
-         it's the equivalent trust-signal for a research/AI portfolio. -->
+    <!-- ***** Publications ***** -->
+    <!-- Replace # with the DOI / IEEE Xplore link to the paper once you have it. -->
 
     <section class="client" id="publications">
       <div class="row">
-        <h2>Publications &amp; Awards</h2>
+        <h2>Publications</h2>
         <div class="pub__list">
           <div class="pub__item">
             <h3>Exploring Classification Models and Input Representations for Arabic
               Readability Assessment</h3>
             <p>IEEE ICNLP 2026 · Published in IEEE Xplore</p>
+            <a href="#" target="_blank" class="link__text">
+              View Paper <span>&rarr;</span>
+            </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Awards ***** -->
+
+    <section class="client" id="awards">
+      <div class="row">
+        <h2>Awards</h2>
+        <div class="pub__list">
           <div class="pub__item">
             <h3>Best Poster Award</h3>
             <p>Bayyin &amp; Baseet — CS &amp; AI Department, University of Jeddah</p>
@@ -174,6 +192,12 @@
           <div class="pub__item">
             <h3>1st Place — Amazon Transcend Challenge 2025</h3>
             <p>Led AI solution design for optimizing Amazon fulfillment center operations</p>
+          </div>
+          <div class="pub__item">
+            <h3>Best Project — Machine Learning Course (CCAI 323)</h3>
+            <p>Certificate of appreciation from the Department of Computer Science &amp; Artificial
+              Intelligence, University of Jeddah, for "Detection of Anemia Using Color of the
+              Fingernails," selected as the best project submitted in the course.</p>
           </div>
         </div>
       </div>
@@ -272,7 +296,7 @@
           <a href="https://huggingface.co/SarahAlhalees" title="HuggingFace">HuggingFace</a>
         </li>
         <li class="footer__social-link-item">
-          <a href="www.linkedin.com/in/sarah-alhalees-416579271" title="LinkedIn">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sarah-alhalees-416579271/" title="LinkedIn">LinkedIn</a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://github.com/SarahAlhalees" title="GitHub">GitHub</a>
