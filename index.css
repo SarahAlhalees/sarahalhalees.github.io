@@ -18,6 +18,7 @@ body {
   line-height: 1.6;
 }
 a { text-decoration: none; color: inherit; }
+.arabic { font-family: 'Reem Kufi', sans-serif; direction: rtl; }
 ul { list-style: none; }
 .row {
   max-width: 1080px;
@@ -64,6 +65,13 @@ ul { list-style: none; }
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.header__text { text-align: left; }
+.header__name-ar {
+  font-size: 1.6rem;
+  color: var(--purple-bright);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
 }
 .heading-primary {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
@@ -130,6 +138,7 @@ section h2 {
 }
 .pub__item h3 { font-size: 1.05rem; margin-bottom: 4px; }
 .pub__item p { color: var(--text-dim); font-size: 0.9rem; }
+.pub__item .link__text { display: inline-block; margin-top: 8px; }
 
 /* ---------- Experience ---------- */
 .timeline {
