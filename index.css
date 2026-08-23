@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
 }
 a { text-decoration: none; color: inherit; }
-.arabic { font-family: 'Reem Kufi', sans-serif; direction: rtl; }
+.arabic { font-family: 'Aref Ruqaa', serif; direction: rtl; }
 ul { list-style: none; }
 .row {
   max-width: 1080px;
@@ -42,7 +42,7 @@ ul { list-style: none; }
 
 /* ---------- Header ---------- */
 .header {
-  min-height: 60vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -62,16 +62,22 @@ ul { list-style: none; }
 .header__text-box {
   flex: 1;
   display: flex;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 90px;
 }
 .header__text { text-align: left; }
 .header__name-ar {
-  font-size: 1.6rem;
-  color: var(--purple-bright);
-  margin-bottom: 6px;
-  letter-spacing: 0.02em;
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 14px;
+  background: linear-gradient(90deg, var(--purple-bright), #E4D9FF, var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 .heading-primary {
   font-size: clamp(2.2rem, 5vw, 3.4rem);
