@@ -1,245 +1,313 @@
-/* ---------- Variables ---------- */
-:root {
-  --ink: #0A0A0F;
-  --ink-soft: #17121F;
-  --purple: #8B5CF6;
-  --purple-bright: #A78BFA;
-  --text: #E8E2D2;
-  --text-dim: #9AA3BC;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* ---------- Reset ---------- */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: var(--ink);
-  color: var(--text);
-  line-height: 1.6;
-}
-a { text-decoration: none; color: inherit; }
-.arabic { font-family: 'Aref Ruqaa', serif; direction: rtl; }
-ul { list-style: none; }
-.row {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 32px;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-/* ---------- Buttons ---------- */
-.btn {
-  display: inline-block;
-  padding: 12px 26px;
-  border: 1px solid var(--purple);
-  border-radius: 999px;
-  color: var(--purple-bright);
-  font-size: 0.9rem;
-  transition: 0.2s;
-}
-.btn:hover { background: var(--purple); color: var(--ink); }
-.btn--purple { background: var(--purple); color: var(--ink); }
-.btn--purple:hover { background: var(--purple-bright); }
+  <title>Sarah Alhalees | AI &amp; Arabic NLP</title>
+  <meta name="description" content="Passionate, experienced, and continuously expanding expertise across modern AI technologies.">
+  <meta name="keywords" content="Sarah Alhalees, Arabic NLP, AI, Machine Learning, Deep Learning, NLP, Readability, Text Simplification" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-/* ---------- Header ---------- */
-.header {
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.nav { padding: 24px 0; }
-.nav__items {
-  display: flex;
-  gap: 28px;
-  justify-content: flex-end;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 32px;
-  font-size: 0.9rem;
-  color: var(--text-dim);
-}
-.nav__link:hover { color: var(--purple-bright); }
+<body>
 
-.header__text-box {
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 40px;
-  padding-bottom: 90px;
-}
-.header__text { text-align: left; }
-.header__name-ar {
-  font-family: 'Aref Ruqaa', serif;
-  font-weight: 700;
-  font-size: 2.6rem;
-  line-height: 1;
-  margin-bottom: 14px;
-  background: linear-gradient(90deg, var(--purple-bright), #E4D9FF, var(--purple));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
-}
-.heading-primary {
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  margin-bottom: 16px;
-}
-.header__text p {
-  color: var(--text-dim);
-  max-width: 480px;
-  margin-bottom: 28px;
-  font-size: 1.05rem;
-}
+  <!-- ***** Header ***** -->
 
-/* ---------- Section shared ---------- */
-section {
-  padding: 70px 0;
-  border-top: 1px solid rgba(139, 92, 246, 0.15);
-}
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 40px;
-}
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+          <li class="nav__item"><a href="#awards" class="nav__link">Awards</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <p class="header__name-ar arabic">سارة الهليس</p>
+        <h1 class="heading-primary">
+          <span>Sarah Alhalees</span>
+        </h1>
+        <p>Passionate, experienced, and continuously expanding expertise across modern AI technologies.</p>
+        <a href="#contact" class="btn btn--purple">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-/* ---------- Work ---------- */
-.work__box {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  margin-bottom: 48px;
-  flex-wrap: wrap;
-}
-.work__box:nth-child(even) { flex-direction: row-reverse; }
-.work__text { flex: 1.2; min-width: 260px; }
-.work__text h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--purple-bright); }
-.work__text p { color: var(--text-dim); margin-bottom: 14px; }
-.work__list { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
-.work__list li {
-  font-size: 0.75rem;
-  border: 1px solid rgba(139,92,246,0.3);
-  padding: 4px 10px;
-  border-radius: 6px;
-  color: var(--text-dim);
-}
-.link__text { color: var(--purple); font-size: 0.9rem; }
+  <main role="main">
 
-.work__image-box { flex: 1; min-width: 220px; }
-.work__image--placeholder {
-  height: 180px;
-  border-radius: 12px;
-  background: var(--ink-soft);
-  border: 1px dashed rgba(139,92,246,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dim);
-  font-size: 0.9rem;
-}
-.work__image { width: 100%; }
+    <!-- ***** Work ***** -->
+    <!-- Each work__box is one project. Each has a work__links row —
+         replace the # href with the real repo / demo / paper link. -->
 
-/* ---------- Publications ---------- */
-.pub__list { display: flex; flex-direction: column; gap: 24px; }
-.pub__item {
-  border-left: 2px solid var(--purple);
-  padding-left: 16px;
-}
-.pub__item h3 { font-size: 1.05rem; margin-bottom: 4px; }
-.pub__item p { color: var(--text-dim); font-size: 0.9rem; }
-.pub__item .link__text { display: inline-block; margin-top: 8px; }
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
 
-/* ---------- Experience ---------- */
-.timeline {
-  position: relative;
-  padding-left: 28px;
-}
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 6px;
-  bottom: 6px;
-  width: 1px;
-  background: rgba(139,92,246,0.25);
-}
-.timeline__item {
-  position: relative;
-  margin-bottom: 36px;
-}
-.timeline__item::before {
-  content: "";
-  position: absolute;
-  left: -28px;
-  top: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--purple);
-}
-.timeline__item h3 { font-size: 1.1rem; color: var(--text); }
-.timeline__org { color: var(--purple-bright); font-size: 0.9rem; margin-top: 2px; }
-.timeline__dates { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 10px; }
-.timeline__item p:last-child { color: var(--text-dim); max-width: 560px; }
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Bayyin &amp; Baseet</h3>
+              <p>
+                An end-to-end Arabic NLP pipeline: readability classification across six
+                difficulty levels and multi-level text simplification (L1–L3), built on two
+                original datasets (~44,000 and ~36,000 sentences). Published at IEEE ICNLP 2026;
+                won Best Poster, CS &amp; AI Department.
+              </p>
+              <ul class="work__list">
+                <li>AraBERTv2</li>
+                <li>AraBART</li>
+                <li>PyTorch</li>
+                <li>Streamlit</li>
+              </ul>
+              <div class="work__links">
+                <!-- Replace # with your HuggingFace Space / demo link -->
+                <a href="https://huggingface.co/SarahAlhalees" target="_blank" class="link__text">
+                  View on HuggingFace <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img class="work__image" src="./images/bayyin.png" alt="Bayyin & Baseet" />
+            </div>
+          </div>
 
-/* ---------- About ---------- */
-.about__content {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.about__text { flex: 1.4; min-width: 260px; }
-.about__text p { color: var(--text-dim); margin-bottom: 16px; }
-.about__photo-container { flex: 1; min-width: 200px; }
-.about__photo,
-.about__photo--placeholder {
-  width: 100%;
-  max-width: 260px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--ink-soft);
-  border: 1px dashed rgba(139,92,246,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dim);
-}
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Mental Health Self-Help Advisor</h3>
+              <p>
+                A RAG chatbot over 2,100+ curated mental health Q&amp;A pairs, with multi-query
+                expansion, answer reranking, and a crisis-safety filter that routes sensitive
+                queries to helplines.
+              </p>
+              <ul class="work__list">
+                <li>ChromaDB</li>
+                <li>HuggingFace</li>
+                <li>Groq</li>
+                <li>Streamlit</li>
+              </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+               <img class="work__image" src="./images/RAG" alt="Mental Health RAG" />
+            </div>
+          </div>
 
-/* ---------- Contact ---------- */
-.contact__info p {
-  color: var(--text-dim);
-  max-width: 480px;
-  margin-bottom: 24px;
-}
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Rayah</h3>
+              <p>
+                An NLP-powered platform for historical analysis: LDA topic modeling, named-entity
+                recognition for historical figures and events, and ElevenLabs text-to-speech for
+                Arabic audio narration.
+              </p>
+              <ul class="work__list">
+                <li>Scikit-learn</li>
+                <li>Transformers</li>
+                <li>ElevenLabs</li>
+              </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img class="work__image" src="./images/ddc.svg" alt="Raya" />
+            </div>
+          </div>
 
-/* ---------- Footer ---------- */
-.footer .row { text-align: center; padding: 50px 32px; }
-.footer__social-links {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 20px;
-  font-size: 0.9rem;
-  color: var(--purple-bright);
-}
-.footer p { color: var(--text-dim); font-size: 0.8rem; }
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Anemia Detection from Fingernail Images</h3>
+              <p>
+                Non-invasive anemia detection using ResNet-18 (84% accuracy), with
+                autoencoder-based feature extraction and K-means++ clustering.
+              </p>
+              <ul class="work__list">
+                <li>TensorFlow/Keras</li>
+                <li>scikit-learn</li>
+                <li>OpenCV</li>
+              </ul>
+              <div class="work__links">
+                <!-- Replace # with your repo / demo link -->
+                <a href="#" target="_blank" class="link__text">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img class="work__image" src="./images/anemia" alt="Anemia Detection" />
+            </div>
+          </div>
 
-.back-to-top {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--purple);
-  color: var(--ink);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
+        </div>
+      </div>
+    </section>
 
-/* ---------- Responsive ---------- */
-@media (max-width: 640px) {
-  .nav__items { justify-content: center; gap: 16px; flex-wrap: wrap; }
-  .work__box, .work__box:nth-child(even) { flex-direction: column; }
-}
+    <!-- ***** Publications ***** -->
+    <!-- Replace # with the DOI / IEEE Xplore link to the paper once you have it. -->
+
+    <section class="client" id="publications">
+      <div class="row">
+        <h2>Publications</h2>
+        <div class="pub__list">
+          <div class="pub__item">
+            <h3>Exploring Classification Models and Input Representations for Arabic
+              Readability Assessment</h3>
+            <p>IEEE ICNLP 2026 · Published in IEEE Xplore</p>
+            <a href="#" target="_blank" class="link__text">
+              View Paper <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Awards ***** -->
+
+    <section class="client" id="awards">
+      <div class="row">
+        <h2>Awards</h2>
+        <div class="pub__list">
+          <div class="pub__item">
+            <h3>Best Poster Award</h3>
+            <p>Bayyin &amp; Baseet — CS &amp; AI Department, University of Jeddah</p>
+          </div>
+          <div class="pub__item">
+            <h3>1st Place — Amazon Transcend Challenge 2025</h3>
+            <p>Led AI solution design for optimizing Amazon fulfillment center operations</p>
+          </div>
+          <div class="pub__item">
+            <h3>Best Project — Machine Learning Course (CCAI 323)</h3>
+            <p>Certificate of appreciation from the Department of Computer Science &amp; Artificial
+              Intelligence, University of Jeddah, for "Detection of Anemia Using Color of the
+              Fingernails," selected as the best project submitted in the course.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Experience ***** -->
+
+    <section class="experience" id="experience">
+      <div class="row">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <h3>AI Specialist</h3>
+            <p class="timeline__org">Data Development Center</p>
+            <p class="timeline__dates">2025.06 — 2025.08</p>
+            <p>
+              Collaborated on an end-to-end data pipeline spanning collection and
+              preprocessing; built topic modeling and sentiment analysis systems, and
+              implemented a RAG system for information retrieval.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3>Quality Unit Leader</h3>
+            <p class="timeline__org">Robotics and IoT Club</p>
+            <p class="timeline__dates">2024.12 — 2025.08</p>
+            <p>
+              Led error-reporting and coordinated with the Writing Committee to improve
+              content quality, keeping materials aligned with the club's visual identity
+              and standards.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3>Organization &amp; Support Team Member</h3>
+            <p class="timeline__org">Electrical Engineer Preparation Program</p>
+            <p class="timeline__dates">2024.06 — 2024.08</p>
+            <p>
+              Managed Zoom sessions, resolved technical issues live, and supported
+              trainees via email correspondence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I graduated with a degree in Artificial Intelligence from the University of Jeddah (4.9/5.0 GPA) with a passion for hands-on,
+              multi-disciplinary machine learning. Driven by curiosity and eager to explore emerging AI technologies, I have built systems
+              across Arabic NLP, retrieval-augmented generation (RAG), computer vision, and deep leaning techniques.
+            </p>
+            <p>
+              I work comfortably in both Arabic and English, and most of my projects live
+              at that intersection too.
+            </p>
+            <!-- Link this to your actual CV PDF once you upload one -->
+            <a href="#contact" class="btn">Resume available upon request via email</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Replace with a real photo: <img class="about__photo" src="./images/sarah.jpg" alt="Sarah Alhalees" /> -->
+            <img class="about__photo" src="./images/sarah" alt="Sarah Alhalees" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Open to Arabic NLP, applied AI, and research-engineering roles. The quickest way
+          to reach me is by email.
+        </p>
+        <a href="mailto:sarahalees3@gmail.com" class="btn">sarahalees3@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Add/remove links as you like. Replace # with your real profile URLs. -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://huggingface.co/SarahAlhalees" title="HuggingFace">HuggingFace</a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="www.linkedin.com/in/sarah-alhalees-416579271\" title="LinkedIn">LinkedIn</a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/SarahAlhalees" title="GitHub">GitHub</a>
+        </li>
+      </ul>
+      <p>&copy; 2026 Sarah Alhalees.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">&uarr;</a>
+  <script src="index.js"></script>
+</body>
+
+</html>
