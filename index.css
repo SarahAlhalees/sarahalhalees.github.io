@@ -321,3 +321,44 @@ section h2::before {
   .work__box, .work__box:nth-child(even) { flex-direction: column; }
   section h2 { font-size: 1.6rem; }
 }
+
+
+/* VOLUNTEERING LOGOS */
+
+.volunteer__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.volunteer__logo {
+    flex: 0 0 90px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.volunteer__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.volunteer__content {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .volunteer__item {
+        gap: 15px;
+    }
+
+    .volunteer__logo {
+        flex: 0 0 65px;
+        width: 65px;
+        height: 65px;
+    }
+}
+
